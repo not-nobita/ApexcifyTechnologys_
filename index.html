@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Listing</h1>
+        <div class="filters">
+            <label for="price-filter">Max Price (PKR): </label>
+            <input type="range" id="price-filter" min="7000" max="40000" value="40000">
+            <span id="price-value">₨40,000</span>
+            <button id="apply-filters">Apply Filters</button>
+        </div>
+        <div id="products" class="products"></div>
+        <div class="navigation">
+            <button id="prev-btn" disabled>Previous</button>
+            <button id="next-btn" disabled>Next</button>
+        </div>
+        <div class="loading" style="display: none;">Loading...</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
